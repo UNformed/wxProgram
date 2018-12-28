@@ -1,0 +1,4 @@
+<!--pages/lanya/lanya.wxml-->
+<view class='content'>
+  <button type='primary' class='button' bindtap='openBlueTooth'>初始化蓝牙适配器</button>
+</view>
