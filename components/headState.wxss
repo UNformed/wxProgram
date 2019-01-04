@@ -1,0 +1,11 @@
+/* components/headState.wxss */
+.flex {
+  display: flex;
+}
+.state {
+  margin-top: 15rpx;
+  margin-right: 20rpx;
+}
+.link {
+  margin-left: 15rpx;
+}

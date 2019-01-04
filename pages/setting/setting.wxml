@@ -1,0 +1,107 @@
+<!--pages/setting/setting.wxml-->
+<view>
+  <head-state></head-state>
+</view>
+<view>
+  <form bindsubmit='setOK'>
+  <view class='weui-cells__title'>电表数量</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_select">
+      <view class="weui-cell__bd">
+        <picker bindchange="bindtAmmeterNumChange" value="{{ammeterIndex}}" range="{{ammeterNums}}">
+          <view class="weui-select">{{ammeterNums[ammeterIndex]}}</view>
+        </picker>
+      </view>
+    </view>
+  </view>
+  <view class="section section_gap">
+    <view class="weui-cells__title">电表类型</view>
+    <radio-group name="ammeterType-group" bindchange="ammeterTypeChange">
+      <label><radio value="singleType" checked='true'/>单项</label>
+      <label><radio value="threeType"/>三项</label>
+    </radio-group>
+  </view>
+  <view class="section section_gap">
+    <view class="weui-cells__title">是否预付费表</view>
+    <radio-group name="prepaid-group" bindchange="prepaidChange">
+      <label><radio value="prepaid"/>是</label>
+      <label><radio value="noPrepaid" checked='true'/>否</label>
+    </radio-group>
+  </view>
+  <view class="section section_gap">
+    <view class="weui-cells__title">费率</view>
+    <radio-group name="Rates-group" bindchange="ratesChange">
+      <label><radio value="singleRates" checked='true'/>单费率</label>
+      <label><radio value="complexRates"/>复费率</label>
+    </radio-group>
+  </view>
+  <view class="weui-cells weui-cells_after-title" wx-if="{{rates=='single'}}">
+    <view class='weui-cell weui-cell_input'>
+      <view class='weui-cell__hd'>
+        <view class='weui-label'>电价</view>
+      </view>
+      <view class='weui-cell__bd'>
+        <input type='digit' class='weui-input' bindinput='singlePriceInput' value='0.4983' placeholder='请输入电价（元/度）'></input>
+      </view>
+    </view>
+  </view>
+  <view class="weui-cells weui-cells_after-title" wx-if="{{rates=='complex'}}">
+    <view class='weui-cell weui-cell_input'>
+      <view class='weui-cell__hd'>
+        <view class='weui-label'>峰电价</view>
+      </view>
+      <view class='weui-cell__bd'>
+        <input type='digit' class='weui-input' bindinput='peakPriceInput' value='0.4983' placeholder='请输入电价（元/度）'></input>
+      </view>
+    </view>
+    <view class='weui-cell weui-cell_input'>
+      <view class='weui-cell__hd'>
+        <view class='weui-label'>平电价</view>
+      </view>
+      <view class='weui-cell__bd'>
+        <input type='digit' class='weui-input' bindinput='levelPriceInput' value='0.4983' placeholder='请输入电价（元/度）'></input>
+      </view>
+    </view>
+    <view class='weui-cell weui-cell_input'>
+      <view class='weui-cell__hd'>
+        <view class='weui-label'>谷电价</view>
+      </view>
+      <view class='weui-cell__bd'>
+        <input type='digit' class='weui-input' bindinput='valleyPriceInput' value='0.4983' placeholder='请输入电价（元/度）'></input>
+      </view>
+    </view>
+  </view>
+  <view class='weui-cells__title'>倍率（CT）</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_select">
+      <view class="weui-cell__bd">
+        <picker wx-if="{{ ctRatesShow }}" bindchange="bindctRatesChange" value="{{ctRatesIndex}}" range="{{ctRates}}">
+          <view class="weui-select">{{ctRates[ctRatesIndex]}}</view>
+        </picker>
+        <input wx-if="{{ !ctRatesShow }}" class='weui-input' value='1' bindinput='ctRateInput' placeholder='请输入倍率（CT）'></input>
+      </view>
+    </view>
+  </view>
+  <view class='weui-cells__title'>倍率（RT）</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_select">
+      <view class="weui-cell__bd">
+        <picker wx-if="{{ rtRatesShow }}" bindchange="bindrtRatesChange" value="{{rtRatesIndex}}" range="{{rtRates}}">
+          <view class="weui-select">{{rtRates[rtRatesIndex]}}</view>
+        </picker>
+        <input wx-if="{{ !rtRatesShow }}" class='weui-input' value='1' bindinput='rtRateInput' placeholder='请输入倍率（RT）'></input>
+      </view>
+    </view>
+  </view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class='weui-cell weui-cell_input'>
+      <view class='weui-cell__hd'>
+        <view class='weui-label'>电表名称</view>
+      </view>
+      <view class='weui-cell__bd'>
+        <input class='weui-input' bindinput='ammeterNameInput' placeholder='请输入电表名称'></input>
+      </view>
+    </view>
+  </view>
+  </form>
+</view>

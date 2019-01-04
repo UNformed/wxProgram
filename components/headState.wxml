@@ -1,0 +1,7 @@
+<!--components/headState.wxml-->
+<view class='flex'>
+  <button size='mini' class='link'>连接</button>
+  <view class='state'>
+    <text>蓝牙状态：{{state}}</text>
+  </view>
+</view>

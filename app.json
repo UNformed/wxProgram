@@ -1,8 +1,11 @@
 {
   "pages": [
-    "pages/lanya/lanya",
+    "pages/setting/setting",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/menu/menu",
+    "pages/lanya/lanya",
+    "pages/logs/logs",
+    "pages/lanya/demo"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,0 +1,2 @@
+/* pages/setting/setting.wxss */
+@import "/lib/style/weui.wxss";

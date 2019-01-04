@@ -52,12 +52,9 @@ Page({
       hasUserInfo: true
     })
   },
-  searchBlueTeeth: function(e) {
-    console.log('搜索蓝牙')
-    wx.openBluetoothAdapter({
-      success: function(res) {
-        console.log('打开蓝牙成功')
-      },
+  clickSetting: function(e) {
+    wx.navigateTo({
+      url: '../../pages/setting/setting'
     })
   }
 })

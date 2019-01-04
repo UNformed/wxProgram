@@ -1,4 +1,18 @@
-<!--pages/lanya/lanya.wxml-->
-<view class='content'>
-  <button type='primary' class='button' bindtap='openBlueTooth'>初始化蓝牙适配器</button>
+<view>
+  <button size='mini'>连接</button>
+</view>
+<view class="content">
+  <view>
+    <button bindtap='connect' :disabled='disconnected'>连接</button>
+    <text>状态：{{connectionStatus}}</text>
+  </view>
+  <view>日志信息：
+    <textarea style='border:1px solid #ccc'>
+      {{msg}}
+    </textarea>
+  </view>
+  <button type="primary" class="button" bindtap="lanya1">1初始化蓝牙适配器</button>
+  <button type="primary" class="button" bindtap="lanya2">2本机蓝牙适配状态</button>
+  <button type="primary" class="button" bindtap="lanya3">3搜索周边蓝牙设备</button>
+  <button type="primary" class="button" bindtap="lanya4">4获取所有周边蓝牙设备信息</button>
 </view>
