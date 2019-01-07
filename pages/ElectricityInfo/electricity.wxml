@@ -1,0 +1,76 @@
+<!--pages/ElectricityInfo/electricity.wxml-->
+<view>
+  <head-state></head-state>
+</view>
+<view>
+  <text>当前表地址：*********</text>
+  <text>时间{{time}}</text>
+</view>
+<view>
+  <view class="page__bd">
+    <view class="weui-panel weui-panel_access">
+      <view class="weui-panel__bd">
+        <view class="weui-media-box weui-media-box_text">
+          <view class="weui-media-box__title weui-media-box__title_in-text">当日电量</view>
+          <view class="weui-media-box__desc flex">
+            <view style='flex:0.35'>正向有功总电量</view>
+            <view style='flex:0.25'>value</view>
+            <view style='flex:0.15'>电价</view>
+            <view style='flex:0.1'>value</view>
+          </view>
+          <view class="weui-media-box__desc flex">
+            <view style='flex:0.35'>反向有功总电量</view>
+            <view style='flex:0.25'>value</view>
+            <view style='flex:0.15'>电价</view>
+            <view style='flex:0.1'>value</view>
+          </view>
+          <view class="weui-media-box__desc flex">
+            <view style='flex:0.3'>倍率</view>
+            <view style='flex:0.7'>value</view>
+          </view>
+          <view class="weui-media-box__desc flex">
+            <view style='flex:0.3'>电费</view>
+            <view style='flex:0.7'>value</view>
+          </view>
+          <view class="weui-media-box__desc flex">
+            <view style='flex:0.3'>剩余电费</view>
+            <view style='flex:0.7'>value</view>
+          </view>
+          <view class="weui-media-box__desc flex">
+            <view style='flex:0.3'>估计使用天数</view>
+            <view style='flex:0.7'>value</view>
+          </view>
+          <view class="weui-media-box__desc flex">
+            <view style='flex:0.3'>无功I电量</view>
+            <view style='flex:0.7'>value</view>
+          </view>
+          <view class="weui-media-box__desc flex">
+            <view style='flex:0.3'>无功II电量</view>
+            <view style='flex:0.7'>value</view>
+          </view>
+        </view>
+        <view class="weui-media-box weui-media-box_text">
+          <view class="weui-media-box__title weui-media-box__title_in-text">当日电量</view>
+          <view class="weui-media-box__desc flex">
+            <view style='flex:0.35'>正向有功总电量</view>
+            <view style='flex:0.25'>value</view>
+            <view style='flex:0.15'>电价</view>
+            <view style='flex:0.1'>value</view>
+          </view>
+          <view class="weui-media-box__desc flex">
+            <view style='flex:0.35'>反向有功总电量</view>
+            <view style='flex:0.25'>value</view>
+            <view style='flex:0.15'>电价</view>
+            <view style='flex:0.1'>value</view>
+          </view>
+        </view>
+      </view>
+      <view class="weui-panel__ft">
+        <view class="weui-cell weui-cell_access weui-cell_link">
+          <view class="weui-cell__bd">查看更多</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

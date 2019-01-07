@@ -1,0 +1,6 @@
+<!--pages/PowerInfo/power.wxml-->
+<view>
+  <head-state></head-state>
+</view>
+<text>pages/PowerInfo/power.wxml</text>
+

@@ -1,0 +1,17 @@
+/* pages/ElectricityInfo/electricity.wxss */
+@import "/lib/style/weui.wxss";
+
+.flex {
+  display: flex;
+  color: black;
+  font-size: 30rpx;
+}
+
+.grid-cell {
+  flex:0.3;
+  
+}
+.grid-cell1 {
+  flex:0.7;
+  
+}

@@ -1,0 +1,16 @@
+/* pages/select/select.wxss */
+
+.flex {
+  display: flex;
+  justify-content: auto;
+  flex-wrap: wrap;
+}
+
+.area {
+  width: 300rpx;
+  height: 300rpx;
+  margin: 30rpx;
+  background-color: gray;
+  text-align: center;
+  line-height: 300rpx;
+}

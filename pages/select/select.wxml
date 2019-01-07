@@ -1,0 +1,13 @@
+<!--pages/select/select.wxml-->
+<view>
+  <head-state></head-state>
+</view>
+<view>
+  <text>当前表地址</text>
+</view>
+<view class='flex'>
+  <view class='area' bindtap='showElectricity'>电费</view>
+  <view class='area' bindtap='showPower'>电量</view>
+  <view class='area' bindtap='showVoltage'>电压</view>
+  <view class='area' bindtap='showElectricCurrent'>电流</view>
+</view>

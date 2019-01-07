@@ -1,0 +1,5 @@
+<!--pages/VoltageInfo/voltage.wxml-->
+<view>
+  <head-state></head-state>
+</view>
+<text>pages/VoltageInfo/voltage.wxml</text>

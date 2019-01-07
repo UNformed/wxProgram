@@ -1,0 +1,5 @@
+<!--pages/ElectricCurrentInfo/electricCurrent.wxml-->
+<text>pages/ElectricCurrentInfo/electricCurrent.wxml</text>
+<view>
+  <head-state></head-state>
+</view>

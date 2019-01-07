@@ -8,4 +8,5 @@
 }
 .link {
   margin-left: 15rpx;
+  height: 65rpx;
 }

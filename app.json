@@ -1,11 +1,16 @@
 {
   "pages": [
+    "pages/select/select",
     "pages/setting/setting",
     "pages/index/index",
     "pages/menu/menu",
     "pages/lanya/lanya",
     "pages/logs/logs",
-    "pages/lanya/demo"
+    "pages/lanya/demo",
+    "pages/VoltageInfo/voltage",
+    "pages/PowerInfo/power",
+    "pages/ElectricityInfo/electricity",
+    "pages/ElectricCurrentInfo/electricCurrent"
   ],
   "window": {
     "backgroundTextStyle": "light",

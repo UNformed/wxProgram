@@ -28,7 +28,7 @@ Page({
     rtRatesIndex: 0,                              // 默认第一个
     rtRatesShow: true,                            // 是否显示选择框
     rtRate: 1,                                    // RT倍率默认为1
-    ammeterName: ''
+    ammeterName: ''                               // 电表名称
   },
 
   /**
@@ -91,7 +91,6 @@ Page({
     this.setData({
       ammeterType: e.detail.value
     })
-    console.log(this.data.ammeterType)
   },
   // 是否预付费
   prepaidChange: function (e) {
@@ -104,7 +103,6 @@ Page({
         prepaid: false
       })
     }
-    console.log(this.data.prepaid)
   },
   // 选择单费率或复费率
   ratesChange: function (e) {
@@ -117,7 +115,6 @@ Page({
         rates: "complex"
       })
     }
-    console.log(this.data.rates)
   },
   // 输入电表数量
   bindtAmmeterNumChange: function (e) {
@@ -125,7 +122,6 @@ Page({
       ammeterIndex: e.detail.value,
       ammeterNum: this.data.ammeterNums[e.detail.value]
     })
-    console.log(this.data.ammeterNum)
   },
   // 改变CT倍率
   bindctRatesChange: function (e) {
@@ -139,7 +135,6 @@ Page({
         ctRate: this.data.ctRates[e.detail.value]
       })
     }
-    console.log(this.data.ctRate)
   },
   // 改变RT倍率
   bindrtRatesChange: function (e) {
@@ -153,62 +148,59 @@ Page({
         rtRate: this.data.rtRates[e.detail.value]
       })
     }
-    console.log(this.data.rtRate)
   },
   // 输入自定义的RT倍率
   rtRateInput: function (e) {
     this.setData({
       rtRate: e.detail.value
     })
-    console.log(this.data.rtRate)
   },
   // 输入自定义的CT倍率
   ctRateInput: function (e) {
     this.setData({
       ctRate: e.detail.value
     })
-    console.log(this.data.ctRate)
   },
   // 输入电表名称
   ammeterNameInput: function (e) {
     this.setData({
       ammeterName: e.detail.value
     })
-    console.log(this.data.ammeterName)
   },
   // 输入单费率电价
   singlePriceInput: function (e) {
     this.setData({
       singlePrice: e.detail.value
     })
-    console.log(this.data.singlePrice)
   },
   // 输入峰值电价
   peakPriceInput: function (e) {
     this.setData({
       peakPrice: e.detail.value
     })
-    console.log(this.data.peakPrice)
   },
   // 输入平值电价
   levelPriceInput: function (e) {
     this.setData({
       levelPrice: e.detail.value
     })
-    console.log(this.data.levelPrice)
   },
   // 输入谷值电价
   valleyPriceInput: function (e) {
     this.setData({
       valleyPrice: e.detail.value
     })
-    console.log(this.data.valleyPrice)
   },
+  // 验证是否为正确的小数
   validate: function (value) {
     if(String(value).split('.').length > 2) {
       return false
     } else {
       return true
     }
+  },
+  // 提交表单数据
+  setOK: function (e) {
+    console.log(e.detail.value)
   }
 })

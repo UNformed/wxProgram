@@ -1,2 +1,18 @@
 /* pages/setting/setting.wxss */
 @import "/lib/style/weui.wxss";
+
+.bottomButtonLeft{
+  width: 300rpx;
+  margin: 0 0 0 20rpx;
+  padding: 0;
+}
+.bottomButtonRight{
+  width: 300rpx;
+  margin: 0 20rpx 0 150rpx;
+  padding: 0;
+}
+.flex {
+  display: flex;
+  justify-items: auto;
+  margin-top: 20rpx
+}
