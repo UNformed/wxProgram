@@ -5,7 +5,41 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    power: "",
+    powerTypes: ["当日正向总电量", "当日正向峰电量", "当日正向平电量", "当日正向谷电量", "当日反向总电量", "当日反向峰电量", "当日反向平电量", "当日反向谷电量"],
+    powerTypesValue: [{
+      time: "当日正向总电量",
+      value: 'value'
+    },
+    {
+      name: "当日正向峰电量",
+      value: 'value'
+    },
+    {
+      name: "当日正向平电量",
+      value: 'value'
+    },
+    {
+      name: "当日正向谷电量",
+      value: 'value'
+    },
+    {
+      name: "当日反向总电量",
+      value: 'value'
+    },
+    {
+      name: "当日反向峰电量",
+      value: 'value'
+    },
+    {
+      name: "当日反向平电量",
+      value: 'value'
+    },
+    {
+      name: "当日反向谷电量",
+      value: 'value'
+    }],
+    powerIndex: 0
   },
 
   /**
@@ -62,5 +96,10 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  bindPowerTypeChange: function (e) {
+    this.setData({
+      powerIndex: e.detail.value
+    })
   }
 })

@@ -2,7 +2,7 @@
 <view>
   <head-state></head-state>
 </view>
-<view>
+<view style='font-size: 30rpx'>
   <text>当前表地址：*********</text>
   <text>时间{{time}}</text>
 </view>
@@ -50,7 +50,7 @@
           </view>
         </view>
         <view class="weui-media-box weui-media-box_text">
-          <view class="weui-media-box__title weui-media-box__title_in-text">当日电量</view>
+          <view class="weui-media-box__title weui-media-box__title_in-text">当月电量</view>
           <view class="weui-media-box__desc flex">
             <view style='flex:0.35'>正向有功总电量</view>
             <view style='flex:0.25'>value</view>

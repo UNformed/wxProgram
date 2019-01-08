@@ -1,1 +1,14 @@
 /* pages/PowerInfo/power.wxss */
+@import "/lib/style/weui.wxss";
+
+.table {
+  display: flex;
+}
+.table-row {
+  display: flex;
+}
+.flex {
+  display: flex;
+  color: black;
+  font-size: 30rpx;
+}
