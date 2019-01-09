@@ -56,5 +56,10 @@ Page({
     wx.navigateTo({
       url: '../../pages/setting/setting'
     })
+  },
+  toInfo: function () {
+    wx.navigateTo({
+      url: '../../pages/select/select',
+    })
   }
 })

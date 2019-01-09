@@ -6,7 +6,14 @@
   <button class='setting' type='primary' bindtap='clickSetting'>设置</button>
 </view>
 <view>
-  <view class='ammeter'></view>
+  <view>
+    <view class='ammeter' bindtap='toInfo'>
+      <text>电表1</text>
+    </view>
+    <view class='number'>
+      <text>表号：XXXXXXX</text>
+    </view>
+  </view>
 </view>
 <!-- <view class="container">
   <view class="userinfo">

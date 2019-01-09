@@ -104,8 +104,9 @@
     </view>
   </view>
   <view class="flex">
-    <button class="weui-btn mini-btn bottomButtonLeft" type="default">保存</button>
-    <button class="weui-btn mini-btn bottomButtonRight" id='setting' form-type='submit' type="primary">设置</button>
+    <button class="weui-btn mini-btn bottomButtonLeft" type="default" bindtap='back'>保存</button>
+    <button wx:if="{{success}}"  class="weui-btn mini-btn bottomButtonRight" id='setting' type="primary">设置成功</button>
+    <button wx:if="{{!success}}" class="weui-btn mini-btn bottomButtonRight" id='setting' form-type='submit' type="primary">设置</button>
   </view>
   </form>
 </view>

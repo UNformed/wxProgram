@@ -14,15 +14,16 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
-const cutTime = date => {
+const getMinutes = date => {
   const hour = date.getHours()
   const minute = date.getMinutes()
   const minutes = hour * 60 + minute
 }
 
-const setArray = minutes => {
-  let hour = ''
-  let minute = ''
+const cutTime = minutes => {
+  let hour = 0
+  let minute = 0
+  let counter = 0
   for (let i = 0; i <= minutes/15; i++) {
     
   }

@@ -1,9 +1,9 @@
 {
   "pages": [
+    "pages/menu/menu",
     "pages/select/select",
     "pages/setting/setting",
     "pages/index/index",
-    "pages/menu/menu",
     "pages/lanya/lanya",
     "pages/logs/logs",
     "pages/lanya/demo",

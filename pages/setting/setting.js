@@ -28,7 +28,8 @@ Page({
     rtRatesIndex: 0,                              // 默认第一个
     rtRatesShow: true,                            // 是否显示选择框
     rtRate: 1,                                    // RT倍率默认为1
-    ammeterName: ''                               // 电表名称
+    ammeterName: '',                               // 电表名称
+    success: false
   },
 
   /**
@@ -202,5 +203,14 @@ Page({
   // 提交表单数据
   setOK: function (e) {
     console.log(e.detail.value)
+    this.setData({
+      success: true
+    })
+  },
+  // 退出设置
+  back: function () {
+    wx.navigateBack({
+      
+    })
   }
 })

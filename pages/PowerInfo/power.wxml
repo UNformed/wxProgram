@@ -11,7 +11,6 @@
 </view>
 <view class="weui-media-box weui-media-box_text">
   <view class="weui-media-box__desc flex" wx:for="{{powerTypesValue}}">
-    {{item.name}}
     <view style='flex:0.35'>时间</view>
     <view style='flex:0.25'>value</view>
   </view>
