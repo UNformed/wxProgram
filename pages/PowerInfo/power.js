@@ -1,4 +1,5 @@
 // pages/PowerInfo/power.js
+const format = require('../../utils/util.js')
 Page({
 
   /**
@@ -39,14 +40,17 @@ Page({
       name: "当日反向谷电量",
       value: 'value'
     }],
-    powerIndex: 0
+    powerIndex: 0,
+    currentTime: ''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      currentTime: format.formatTimes(new Date())
+    })
   },
 
   /**

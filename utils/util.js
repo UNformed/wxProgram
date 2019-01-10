@@ -19,7 +19,13 @@ const getMinutes = date => {
   const minute = date.getMinutes()
   const minutes = hour * 60 + minute
 }
+const formatTimes = date => {
+  const hour = date.getHours()
+  const minute = date.getMinutes()
+  const second = date.getSeconds()
 
+  return [hour, minute, second].map(formatNumber).join(':')
+}
 const cutTime = minutes => {
   let hour = 0
   let minute = 0
@@ -30,5 +36,6 @@ const cutTime = minutes => {
 }
 
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  formatTimes: formatTimes
 }

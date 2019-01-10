@@ -1,1 +1,7 @@
 /* pages/VoltageInfo/voltage.wxss */
+@import "/lib/style/weui.wxss";
+.flex {
+  display: flex;
+  color: black;
+  font-size: 30rpx;
+}

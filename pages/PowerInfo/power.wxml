@@ -14,4 +14,8 @@
     <view style='flex:0.35'>时间</view>
     <view style='flex:0.25'>value</view>
   </view>
+   <view class="weui-media-box__desc flex">
+    <view style='flex:0.35'>{{currentTime}}</view>
+    <view style='flex:0.25'>value</view>
+  </view>
 </view>

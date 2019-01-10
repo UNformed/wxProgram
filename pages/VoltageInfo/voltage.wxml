@@ -2,4 +2,53 @@
 <view>
   <head-state></head-state>
 </view>
-<text>pages/VoltageInfo/voltage.wxml</text>
+<view>
+  <text>当前表地址：*********</text>
+  <text>时间{{time}}</text>
+</view>
+
+  <view class='page__bd'>
+  <view class='weui-panel weui-panel_access'>
+  <view class='weui-panel__bd'></view>
+  <view class='weui-media-box weui-media-box_text'>
+     <view class="weui-media-box__title weui-media-box__title_in-text">实时电压</view>
+     <view class="weui-media-box__desc flex">
+            <view style='flex:0.25'>时间</view>
+            <view style='flex:0.25'>UA(电压A)</view>
+            <view style='flex:0.25'>UB(电压B)</view>
+            <view style='flex:0.25'>UC(电压C)</view>
+          </view>
+      <view class="weui-media-box__desc flex">
+            <view style='flex:0.25'>00：00</view>
+            <view style='flex:0.25'>value</view>
+            <view style='flex:0.25'>value</view>
+            <view style='flex:0.25'>value</view>
+          </view>   
+      <view class="weui-media-box__desc flex">
+            <view style='flex:0.25'>00：15</view>
+            <view style='flex:0.25'>value</view>
+            <view style='flex:0.25'>value</view>
+            <view style='flex:0.25'>value</view>
+          </view>  
+       <view class="weui-media-box__desc flex">
+            <view style='flex:0.25'>00：30</view>
+            <view style='flex:0.25'>value</view>
+            <view style='flex:0.25'>value</view>
+            <view style='flex:0.25'>value</view>
+          </view>  
+       <view class="weui-media-box__desc flex">
+            <view style='flex:0.25'>{{times}}</view>
+            <view style='flex:0.25'>value</view>
+            <view style='flex:0.25'>value</view>
+            <view style='flex:0.25'>value</view>
+          </view>  
+  </view>
+   <view class="weui-panel__ft">
+        <view class="weui-cell weui-cell_access weui-cell_link">
+          <view class="weui-cell__bd">查看更多</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </view>
+      </view>
+  </view>
+  </view>
+
